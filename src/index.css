@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body{
+    background-color: #84ACFA;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Qilka';
+    src: url('./assets/Qilka-Bold copy.otf');
+}
+
+@theme{
+    --font-qilka: 'Qilka';
+    --font-open-sans: 'Open Sans';
+}
