@@ -75,44 +75,47 @@ export default function SignUp() {
         <NavLink to="/signin" className={({ isActive }) => isActive ? "text-[#D3D3D3] pointer-events-none" : "text-white"}>Login</NavLink>
         <NavLink to="/signup" className={({ isActive }) => isActive ? "text-[#D3D3D3] pointer-events-none" : "text-white"}>Create</NavLink>
         </div>
+
+        <div className="w-full max-w-[500px] mx-auto px-4">
         <div className="border border-white rounded-lg p-4 mt-6">
-        <h2 className="text-white text-center font-bold text-[20px] mt-4">Sign Up</h2>
-        {generalError && <p className="text-red-500 text-center mt-2">{generalError}</p>}
-        <div className="border border-white rounded-lg p-4 mx-4 mt-6">
+            <h2 className="text-white text-center font-bold text-[20px] mt-4">Sign Up</h2>
+            {generalError && <p className="text-red-500 text-center mt-2">{generalError}</p>}
+            <div className="border border-white rounded-lg p-4 mx-2 md:mx-4 mt-6">
             <label className="text-white text-[16px] font-open-sans font-bold">Username:</label>
             <input
-            id="username-input"
-            type="text"
-            placeholder="Enter your username"
-            className="w-full bg-transparent border-white border-b text-white outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-opacity-50 mt-[10px] font-normal"
+                id="username-input"
+                type="text"
+                placeholder="Enter your username"
+                className="w-full bg-transparent border-white border-b text-white outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-opacity-50 mt-[10px] font-normal"
             />
-            {usernameError && <p className="text-red-500 mt-2">{usernameError}</p>}
-        </div>
-        <div className="border border-white rounded-lg p-4 mx-4 mt-6">
+            {usernameError && <p className="text-red-500 mt-2 text-sm">{usernameError}</p>}
+            </div>
+            <div className="border border-white rounded-lg p-4 mx-2 md:mx-4 mt-6">
             <label className="text-white text-[16px] font-open-sans font-bold">Email Address:</label>
             <input
-            id="email-input"
-            type="text"
-            placeholder="Enter your email address"
-            className="w-full bg-transparent border-white border-b text-white outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-opacity-50 mt-[10px] font-normal"
+                id="email-input"
+                type="text"
+                placeholder="Enter your email address"
+                className="w-full bg-transparent border-white border-b text-white outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-opacity-50 mt-[10px] font-normal"
             />
-            {emailError && <p className="text-red-500 mt-2">{emailError}</p>}
-        </div>
-        <div className="border border-white rounded-lg p-4 mx-4 mt-6">
+            {emailError && <p className="text-red-500 mt-2 text-sm">{emailError}</p>}
+            </div>
+            <div className="border border-white rounded-lg p-4 mx-2 md:mx-4 mt-6">
             <label className="text-white text-[16px] font-open-sans font-bold">Password:</label>
             <input
-            id="password-input"
-            type="password"
-            placeholder="Enter your password"
-            className="w-full bg-transparent border-white border-b text-white outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-opacity-50 mt-[10px] font-normal"
+                id="password-input"
+                type="password"
+                placeholder="Enter your password"
+                className="w-full bg-transparent border-white border-b text-white outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-opacity-50 mt-[10px] font-normal"
             />
-            {passwordError && <p className="text-red-500 mt-2">{passwordError}</p>}
-        </div>
+            {passwordError && <p className="text-red-500 mt-2 text-sm">{passwordError}</p>}
+            </div>
         </div>
         <button onClick={handleSignUp}
-        className="bg-white text-black text-center font-open-sans py-3.75 px-[50px] rounded-full mt-[50px] block mx-auto hover:scale-120 transition-transform">
-        Create Account
+            className="bg-white text-black text-center font-open-sans py-3 px-12 rounded-full mt-10 block mx-auto hover:scale-105 transition-transform">
+            Create Account
         </button>
+        </div>
     </div>
     )
 }
