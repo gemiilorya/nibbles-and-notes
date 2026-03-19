@@ -10,7 +10,7 @@ export default function Discover() {
     const fetchRecipes = async () => {
       const { data, error } = await supabase
         .from('recipes')
-        .select('*, profiles(username, avatar_url)')
+        .select('*, profiles(id, username, avatar_url)')
         .order('created_at', { ascending: false })
       console.log('data:', data)
       console.log('error:', error)

@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp'
 import SignIn from './pages/SignIn'
 import RecipePage from './pages/RecipePage'
 import Settings from './pages/Settings'
+import UserProfile from './pages/UserProfile'
 
 import { CompassIcon, UserCircleIcon, PlusCircleIcon } from '@phosphor-icons/react'
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/recipe/:id" element={<RecipePage />} />
+          <Route path="/user/:id" element={<UserProfile />} />
         </Routes>
       </div>
 
