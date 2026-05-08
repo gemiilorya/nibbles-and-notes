@@ -1,16 +1,75 @@
-# React + Vite
+# 🍽️ Nibbles & Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### *Share the recipe. Share the love.*
 
-Currently, two official plugins are available:
+> A cozy corner of the internet where food lovers post, discover, and celebrate recipes together — built with good vibes and great taste.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## What is Nibbles & Notes?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Nibbles & Notes** is a recipe-sharing social media web app where food enthusiasts can post their favorite recipes, browse others' culinary creations, and build a little community around the joy of cooking. Think of it as a social feed — but make it delicious.
 
-## Expanding the ESLint configuration
+Built as a personal project for the love of food and frontend craft. No Michelin stars required. 🌟
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- **Recipe Posting** — Share your recipes with the community complete with ingredients, steps, and photos
+- **Social Feed** — Browse and discover recipes posted by other users
+- **Avatar Uploads** — Personalize your profile with a custom avatar (with cache-busting for always-fresh updates)
+- **Authentication** — Secure user accounts powered by Supabase Auth
+- **Cloud Backend** — All recipes and user data stored and served via Supabase
+- **Responsive Design** — Looks great whether you're cooking from your phone or desktop
+- **Shareable Links** — Clean routing powered by React Router with Vercel deployment support
+
+---
+
+## 🛠️ Built With
+
+- **React** — Component-based UI
+- **Vite** — Lightning-fast dev environment
+- **Tailwind CSS v4** — Utility-first styling
+- **Supabase** — Backend, auth, and database
+- **React Router** — Client-side routing
+- **Vercel** — Deployment with custom `vercel.json` rewrites for SPA routing
+
+---
+
+## A Note from the Developer
+
+Nibbles & Notes is a **passion project** — made for fun, built with care, and seasoned with a lot of trial and error. It's not trying to compete with the big recipe platforms. It's just a developer's love letter to good food and good code.
+
+If you find a bug, it's a *secret ingredient*. 🧂
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/nibbles-and-notes.git
+cd nibbles-and-notes
+
+# Install dependencies
+npm install
+
+# Set up your environment variables
+cp .env.example .env
+# Add your Supabase URL and anon key
+
+# Run the dev server
+npm run dev
+```
+
+
+---
+
+## 📄 License
+
+Open source and made with 💛 — fork it, cook with it, make it your own.
+
+---
+
+<p align="center">Made with 💚 and a rumbling stomach · <em>Nibbles & Notes</em></p>
